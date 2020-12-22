@@ -8,11 +8,18 @@ class Mobile extends StatefulWidget {
 class _MobileState extends State<Mobile> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(colors: [Colors.red,Colors.purple,Colors.yellow])
-      ),
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [Colors.red,Colors.purple,Colors.yellow])
+          ),
 
+        ),
+      ),
     );
   }
 }

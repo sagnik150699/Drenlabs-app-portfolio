@@ -9,6 +9,18 @@ class Web extends StatefulWidget {
 class _WebState extends State<Web> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [Colors.red,Colors.purple,Colors.yellow])
+          ),
+
+        ),
+      ),
+    );
   }
 }
