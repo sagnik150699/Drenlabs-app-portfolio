@@ -20,13 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b72c4192-da4f-4940-a47f-bd22cb0539b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Drenlabs-app-portfolio.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_portfolio/lib/ui/mobile.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_portfolio/lib/ui/web.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_portfolio/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/app_portfolio/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +35,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1m15hLqGPYgqzK1PQI7eN46l9jf" />
@@ -58,6 +58,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bloging-website" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -78,6 +79,21 @@
       <option name="presentableId" value="Default" />
       <updated>1608648374997</updated>
     </task>
+    <task id="LOCAL-00001" summary="hllo">
+      <created>1608649160551</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608649160552</updated>
+    </task>
+    <task id="LOCAL-00002" summary="hllo">
+      <created>1608649304475</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608649304475</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,30 +107,42 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hllo" />
+    <option name="LAST_COMMIT_MESSAGE" value="hllo" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="1464" y="123" width="762" height="529" key="#main.dart" timestamp="1608648523759">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1464" y="123" width="762" height="529" key="#main.dart/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608648523759" />
-    <state width="923" height="181" key="GridCell.Tab.0.bottom" timestamp="1608648624551">
+    <state x="1633" y="142" width="424" height="491" key="FileChooserDialogImpl" timestamp="1608649335598">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="923" height="181" key="GridCell.Tab.0.bottom/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608648624551" />
-    <state width="923" height="181" key="GridCell.Tab.0.center" timestamp="1608648624551">
+    <state x="1633" y="142" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608649335598" />
+    <state width="923" height="181" key="GridCell.Tab.0.bottom" timestamp="1608649438456">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="923" height="181" key="GridCell.Tab.0.center/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608648624551" />
-    <state width="923" height="181" key="GridCell.Tab.0.left" timestamp="1608648624550">
+    <state width="923" height="181" key="GridCell.Tab.0.bottom/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608649438456" />
+    <state width="923" height="181" key="GridCell.Tab.0.center" timestamp="1608649438455">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="923" height="181" key="GridCell.Tab.0.left/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608648624550" />
-    <state width="923" height="181" key="GridCell.Tab.0.right" timestamp="1608648624551">
+    <state width="923" height="181" key="GridCell.Tab.0.center/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608649438455" />
+    <state width="923" height="181" key="GridCell.Tab.0.left" timestamp="1608649438455">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="923" height="181" key="GridCell.Tab.0.right/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608648624551" />
+    <state width="923" height="181" key="GridCell.Tab.0.left/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608649438455" />
+    <state width="923" height="181" key="GridCell.Tab.0.right" timestamp="1608649438456">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state width="923" height="181" key="GridCell.Tab.0.right/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608649438456" />
     <state x="1366" y="19" width="1022" height="737" key="SettingsEditor" timestamp="1608648546149">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1366" y="19" width="1022" height="737" key="SettingsEditor/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608648546149" />
+    <state x="1445" y="120" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1608649313755">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1445" y="120" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608649313755" />
   </component>
 </project>
