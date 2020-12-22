@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b72c4192-da4f-4940-a47f-bd22cb0539b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Drenlabs-app-portfolio.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_portfolio/lib/ui/mobile.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_portfolio/lib/ui/web.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_portfolio/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/app_portfolio/lib/main.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1m15hLqGPYgqzK1PQI7eN46l9jf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/app_portfolio/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b72c4192-da4f-4940-a47f-bd22cb0539b9" name="Default Changelist" comment="" />
+      <created>1608648374997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608648374997</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1464" y="123" width="762" height="529" key="#main.dart" timestamp="1608648523759">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1464" y="123" width="762" height="529" key="#main.dart/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608648523759" />
+    <state width="923" height="181" key="GridCell.Tab.0.bottom" timestamp="1608648624551">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state width="923" height="181" key="GridCell.Tab.0.bottom/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608648624551" />
+    <state width="923" height="181" key="GridCell.Tab.0.center" timestamp="1608648624551">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state width="923" height="181" key="GridCell.Tab.0.center/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608648624551" />
+    <state width="923" height="181" key="GridCell.Tab.0.left" timestamp="1608648624550">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state width="923" height="181" key="GridCell.Tab.0.left/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608648624550" />
+    <state width="923" height="181" key="GridCell.Tab.0.right" timestamp="1608648624551">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state width="923" height="181" key="GridCell.Tab.0.right/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608648624551" />
+    <state x="1366" y="19" width="1022" height="737" key="SettingsEditor" timestamp="1608648546149">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1366" y="19" width="1022" height="737" key="SettingsEditor/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608648546149" />
+  </component>
+</project>
