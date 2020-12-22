@@ -10,7 +10,7 @@ class _MobileState extends State<Mobile> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        gradient: LinearGradient(colors: [Colors.red,Colors.blue])
+        gradient: LinearGradient(colors: [Colors.red,Colors.purple,Colors.yellow])
       ),
 
     );
