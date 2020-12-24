@@ -15,235 +15,123 @@ class Mobile extends StatefulWidget {
 Variables variables = new Variables();
 
 class _MobileState extends State<Mobile> {
-  ScrollController controller = ScrollController();
-
-  Color colour1 = Color(0xFF77CBDC);
-  Color colour2 = Color(0xFF214C70);
-  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
-
-  @override
-  void initState() {
-    super.initState();
-    controller.addListener(() {
-      if (controller.offset == 0) {
-        setState(() {
-          colour1 = Color(0xFF77CBDC);
-          colour2 = Color(0xFF214C70);
-        });
-      } else if (controller.offset > 20) {
-        setState(() {
-          colour1 = Color(0xFF77CBDC);
-          colour2 = Color(0xFF214C70);
-        });
-      }
-
-      print(controller.offset);
-    });
-  }
-
+  double topONe = 150;
+  double topTwo = 360;
+  double three = 0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Stack(
-          children: <Widget>[
+          body: NotificationListener(
+        onNotification: (v) {
+          if (v is ScrollUpdateNotification) {
+            setState(
+              () {
+                topONe = topONe - v.scrollDelta / 25;
+                topTwo = topTwo - v.scrollDelta / 30;
+                three = three - v.scrollDelta / 25;
+              },
+            );
+          }
+          return true;
+        },
+        child: Stack(
+          children: [
             Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.bottomRight,
                   end: Alignment.topLeft,
-                  colors: [colour1, colour2],
+                  colors: [Color(0xFF77CBDC), Color(0xFF214C70)],
                 ),
               ),
             ),
-            Stack(
-              fit: StackFit.expand,
-              children: [
-                BackdropFilter(
-                  filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
-                  child: Container(),
+            Positioned(
+              top: 0,
+              left: topONe,
+              child: SvgPicture.asset("images/Ovalbig.svg"),
+            ),
+            Positioned(
+              top: 450,
+              left: topTwo,
+              child: SvgPicture.asset("images/smallrectangle.svg"),
+            ),
+            Positioned(
+              top: 600,
+              left: three,
+              child: SvgPicture.asset("images/Oval.svg"),
+            ),
+            SafeArea(
+              child: Container(
+                height: 100,
+//color: Colors.amber[200].withOpacity(0),
+                child: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      variables.texts(
+                          "Portfolio project by", 25.0, FontWeight.normal),
+                      variables.texts("Nicola Cestaro", 25.0, FontWeight.bold)
+                    ],
+                  ),
                 ),
-                Align(
-                  alignment: Alignment.topRight,
-                  child: SvgPicture.asset("images/Ovalbig.svg"),
+              ),
+            ),
+            ListView(
+              scrollDirection: Axis.horizontal,
+              children: <Widget>[
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    variables.texts("Some App Name", 34.0, FontWeight.bold),
+                    variables.texts("Goes Here", 34.0, FontWeight.bold),
+                    SizedBox(height: 26),
+                    variables.texts("Revolutionize your work experience and",
+                        20.0, FontWeight.w300),
+                    variables.texts(" expand your possibility thanks to the ",
+                        20.0, FontWeight.w300),
+                    variables.texts("resources that the web has to offer ",
+                        20.0, FontWeight.w300),
+                    SizedBox(height: 50),
+                    Positioned(
+                        //top: 350,
+                        child: Image(image: AssetImage("images/master.png")))
+                    //variables.texts("MasterPlan", 26.0, FontWeight.w200),
+//SizedBox(height: 0),
+                  ],
+                ),
+                Container(
+                  width: 800,
+                  color: Colors.transparent,
                 ),
               ],
             ),
-            Align(
-                alignment: Alignment.centerRight,
-                child: SvgPicture.asset("images/smallrectangle.svg")),
-            Align(
-                alignment: Alignment.bottomLeft,
-                child: SvgPicture.asset("images/Oval.svg")),
-            SafeArea(
-              child: ListView(
-//scrollDirection: Axis.horizontal,
-                controller: controller,
-                padding: const EdgeInsets.all(8),
-                children: <Widget>[
-                  Container(
-                    height: 100,
-                    color: Colors.amber[200].withOpacity(0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        variables.texts(
-                            "Portfolio project by", 25.0, FontWeight.normal),
-                        variables.texts("Nicola Cestaro", 25.0, FontWeight.bold)
-                      ],
-                    ),
-                  ),
-                  SizedBox(
-                    height: 40,
-                  ),
-                  CarouselSlider(
-//carouselController: controller,
-                      options: CarouselOptions(
-                        height: 400,
-                        aspectRatio: 16 / 9,
-                        viewportFraction: 0.9,
-                        initialPage: 0,
-                        enableInfiniteScroll: true,
-                        reverse: false,
-                        autoPlay: true,
-                        autoPlayInterval: Duration(seconds: 3),
-                        autoPlayAnimationDuration: Duration(milliseconds: 800),
-                        autoPlayCurve: Curves.fastOutSlowIn,
-                        enlargeCenterPage: true,
-                        scrollDirection: Axis.horizontal,
-                      ),
-                      items: [
-                        Container(
-                          height: 250,
-                          child: Column(
-                            children: [
-                              variables.texts(
-                                  "Some App Name", 34.0, FontWeight.bold),
-                              variables.texts(
-                                  "Goes Here", 34.0, FontWeight.bold),
-                              SizedBox(height: 26),
-                              variables.texts(
-                                  "Revolutionize your work experience and expand your possibility thanks to the resources that the web has to offer ",
-                                  20.0,
-                                  FontWeight.w300),
-                              SizedBox(height: 50),
-                              variables.texts(
-                                  "MasterPlan", 26.0, FontWeight.w200),
-//SizedBox(height: 0),
-                            ],
-                          ),
-                        ),
-                      ]),
-                  CarouselSlider(
-                    options: CarouselOptions(
-                      height: 300,
-                      aspectRatio: 16 / 9,
-                      viewportFraction: 0.9,
-                      initialPage: 0,
-                      enableInfiniteScroll: true,
-                      reverse: false,
-                      autoPlay: true,
-                      autoPlayInterval: Duration(seconds: 3),
-                      autoPlayAnimationDuration: Duration(milliseconds: 800),
-                      autoPlayCurve: Curves.fastOutSlowIn,
-                      enlargeCenterPage: true,
-                      scrollDirection: Axis.horizontal,
-                    ),
-                    items: [
-                      Image(
-                        height: 200,
-                        image: AssetImage('images/phoneH.png'),
-                      ),
-                    ],
-                  )
-                ],
-              ),
-            ),
-
-            // Image(image: AssetImage("images/Group.svg"))
+            Positioned(
+              top: 450,
+                child: Image(image: AssetImage("images/mobile.png")))
           ],
         ),
-      ),
+      )),
     );
   }
 }
 
 //
+// //Portfilio and nicola
 // SafeArea(
-// child: ListView(
-// //scrollDirection: Axis.horizontal,
-// controller: controller,
-// padding: const EdgeInsets.all(8),
-// children: <Widget>[
-// Container(
-// height: 100,
-// color: Colors.amber[200].withOpacity(0),
+// child: Container(
+// height: 200,
+// //color: Colors.amber[200].withOpacity(0),
+// child: Center(
 // child: Column(
 // mainAxisAlignment: MainAxisAlignment.center,
 // children: [
-// variables.texts("Portfolio project by", 25.0, FontWeight.normal),
+// variables.texts(
+// "Portfolio project by", 25.0, FontWeight.normal),
 // variables.texts("Nicola Cestaro", 25.0, FontWeight.bold)
 // ],
 // ),
 // ),
-//
-// SizedBox(
-// height: 40,
-// ),
-//
-// CarouselSlider(
-// //carouselController: controller,
-// options: CarouselOptions(
-// height: 400,
-// aspectRatio: 16/9,
-// viewportFraction: 0.9,
-// initialPage: 0,
-// enableInfiniteScroll: true,
-// reverse: false,
-// autoPlay: true,
-// autoPlayInterval: Duration(seconds: 3),
-// autoPlayAnimationDuration: Duration(milliseconds: 800),
-// autoPlayCurve: Curves.fastOutSlowIn,
-// enlargeCenterPage: true,
-// scrollDirection: Axis.horizontal,
-// ),
-// items:[Container(
-// height: 250,
-// child: Column(
-// children: [
-// variables.texts("Some App Name", 34.0,FontWeight.bold),
-// variables.texts("Goes Here", 34.0,FontWeight.bold),
-// SizedBox(height: 26),
-// variables.texts("Revolutionize your work experience and expand your possibility thanks to the resources that the web has to offer ", 20.0,FontWeight.w300),
-// SizedBox(height: 50),
-// variables.texts("MasterPlan", 26.0, FontWeight.w200),
-// //SizedBox(height: 0),
-// ],
-// ),
-// ),]
-// ),
-// CarouselSlider(
-// options: CarouselOptions(
-// height: 300,
-// aspectRatio: 16/9,
-// viewportFraction: 0.9,
-// initialPage: 0,
-// enableInfiniteScroll: true,
-// reverse: false,
-// autoPlay: true,
-// autoPlayInterval: Duration(seconds: 3),
-// autoPlayAnimationDuration: Duration(milliseconds: 800),
-// autoPlayCurve: Curves.fastOutSlowIn,
-// enlargeCenterPage: true,
-// scrollDirection: Axis.horizontal,
-// ),
-// items:
-// [
-// Image(
-// height: 200,
-// image: AssetImage('images/phoneH.png'),
-// ),
-// ], )
-// ],
 // ),
 // ),
