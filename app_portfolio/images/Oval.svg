@@ -1,10 +1,10 @@
-<svg width="195" height="267" viewBox="0 0 195 267" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="361" height="341" viewBox="0 0 361 341" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.2" filter="url(#filter0_f)">
-<circle cx="-106" cy="301" r="223" fill="#56FEF8"/>
-<circle cx="-106" cy="301" r="223" stroke="#696FC9" stroke-width="100"/>
+<circle cx="60" cy="301" r="223" fill="#56FEF8"/>
+<circle cx="60" cy="301" r="223" stroke="#696FC9" stroke-width="100"/>
 </g>
 <defs>
-<filter id="filter0_f" x="-406.183" y="0.817183" width="600.366" height="600.366" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_f" x="-240.183" y="0.817183" width="600.366" height="600.366" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="13.5914" result="effect1_foregroundBlur"/>
