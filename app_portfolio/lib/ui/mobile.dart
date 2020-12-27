@@ -15,9 +15,9 @@ class Mobile extends StatefulWidget {
 Variables variables = new Variables();
 
 class _MobileState extends State<Mobile> {
-  double topONe = 150;
-  double topTwo = 370;
-  double three = -110;
+  double topONe = 250;
+  double topTwo = 450;
+  double three = -300;
 
   final ScrollController controller = ScrollController();
   CarouselController buttonCarouselController2 = CarouselController();
@@ -62,36 +62,32 @@ class _MobileState extends State<Mobile> {
                 ),
               ),
             ),
+            //BigOval
             Positioned(
-              top: 0,
+              top: -100,
               left: topONe,
-              child: SvgPicture.asset("images/Ovalbig.svg"),
+              child: Image(
+                image: AssetImage('images/Ovalbig.png')
+              )
+              // SvgPicture.asset("images/Ovalbig.svg"),
             ),
+            //SmallCircle
             Positioned(
               top: categoryHeight/1.77,
               left: topTwo,
-              child: SvgPicture.asset("images/smallrectangle.svg"),
+              child: Image(
+                image: AssetImage('images/smallcircle.png')
+              )
+              // SvgPicture.asset("images/smallrectangle.svg"),
             ),
+            //Lower circle
             Positioned(
-              top: categoryHeight/1.32,
+              top: categoryHeight/2,
               left: three,
-              child: SvgPicture.asset("images/Oval.svg"),
-            ),
-            SafeArea(
-              child: Container(
-                height: categoryHeight/7.97,
-//color: Colors.amber[200].withOpacity(0),
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      variables.texts(
-                          "Portfolio project by", categoryWidth/16.44, FontWeight.normal),
-                      variables.texts("Nicola Cestaro", categoryWidth/16.44, FontWeight.bold)
-                    ],
-                  ),
-                ),
-              ),
+              child: Image(
+                image: AssetImage('images/Oval.png'),
+              )
+              // SvgPicture.asset("images/Oval.svg"),
             ),
             //Second Carousel
 
@@ -107,13 +103,15 @@ class _MobileState extends State<Mobile> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           variables.texts(
-                              "Some  App Name", categoryWidth/12.08, FontWeight.bold),
+                              "Some  App1 Name", categoryWidth/12.08, FontWeight.bold),
                           variables.texts("Goes Here", categoryWidth/12.08, FontWeight.bold),
-                          SizedBox(height: categoryHeight/15),
-                          variables.texts(
-                              "Revolutionize your work experience and",
-                              categoryWidth/21.5,
-                              FontWeight.w300),
+                          SizedBox(height: categoryHeight/20),
+                          Center(
+                            child: variables.texts(
+                                "Revolutionize your work experience and",
+                                categoryWidth/21.5,
+                                FontWeight.w300),
+                          ),
                           variables.texts(
                               " expand your possibility thanks to the ",
                               categoryWidth/20.55,
@@ -122,17 +120,18 @@ class _MobileState extends State<Mobile> {
                               "resources that the web has to offer ",
                               categoryWidth/20.55,
                               FontWeight.w300),
+
                           //SizedBox(height: 50),
                           Image(
                             image: AssetImage("images/master.png"),
                           ),
                         ],
                       ),
-                      Positioned(
-                          top: categoryHeight/1.44,
-                          left: 40,
-                          child: Image(
-                              image: AssetImage("images/croppedmobile.png")))
+                      Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Image(
+                            image: AssetImage("images/croppedmobile.png")),
+                      )
                     ]),
                     //Second
                     Stack(children: [
@@ -141,13 +140,15 @@ class _MobileState extends State<Mobile> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           variables.texts(
-                              "Some  App Name", categoryWidth/12.08, FontWeight.bold),
+                              "Some  App2 Name", categoryWidth/12.08, FontWeight.bold),
                           variables.texts("Goes Here", categoryWidth/12.08, FontWeight.bold),
                           SizedBox(height: categoryHeight/15),
-                          variables.texts(
-                              "Revolutionize your work experience and",
-                              categoryWidth/21.5,
-                              FontWeight.w300),
+                          Center(
+                            child: variables.texts(
+                                "Revolutionize your work experience and",
+                                categoryWidth/21.5,
+                                FontWeight.w300),
+                          ),
                           variables.texts(
                               " expand your possibility thanks to the ",
                               categoryWidth/20.55,
@@ -162,11 +163,13 @@ class _MobileState extends State<Mobile> {
                           ),
                         ],
                       ),
-                      Positioned(
-                          top: categoryHeight/1.44,
-                          left: 40,
-                          child: Image(
-                              image: AssetImage("images/croppedmobile.png")))
+
+                      Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Image(
+                            image: AssetImage("images/croppedmobile.png")),
+                      )
+
                     ]),
                     //Third
                     Stack(children: [
@@ -175,13 +178,15 @@ class _MobileState extends State<Mobile> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           variables.texts(
-                              "Some  App Name", categoryWidth/12.08, FontWeight.bold),
+                              "Some  App3 Name", categoryWidth/12.08, FontWeight.bold),
                           variables.texts("Goes Here", categoryWidth/12.08, FontWeight.bold),
                           SizedBox(height: categoryHeight/15),
-                          variables.texts(
-                              "Revolutionize your work experience and",
-                              categoryWidth/21.5,
-                              FontWeight.w300),
+                          Center(
+                            child: variables.texts(
+                                "Revolutionize your work experience and",
+                                categoryWidth/21.5,
+                                FontWeight.w300),
+                          ),
                           variables.texts(
                               " expand your possibility thanks to the ",
                               categoryWidth/20.55,
@@ -196,11 +201,11 @@ class _MobileState extends State<Mobile> {
                           ),
                         ],
                       ),
-                      Positioned(
-                          top: categoryHeight/1.44,
-                          left: 40,
-                          child: Image(
-                              image: AssetImage("images/croppedmobile.png")))
+                      Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Image(
+                            image: AssetImage("images/croppedmobile.png")),
+                      )
                     ]),
 
                   ],
@@ -262,41 +267,64 @@ class _MobileState extends State<Mobile> {
             ),
 
             //Right button
-            Align(
-              alignment: Alignment.centerRight,
-              child: IconButton(
-                onPressed: () {
-                  // buttonCarouselController2.nextPage(
-                  //     duration: Duration(milliseconds: 300),
-                  //     curve: Curves.linear);
+            Padding(
+              padding: const EdgeInsets.only(bottom: 30.0),
+              child: Align(
+                alignment: Alignment.centerRight,
+                child: IconButton(
+                  onPressed: () {
+                    // buttonCarouselController2.nextPage(
+                    //     duration: Duration(milliseconds: 300),
+                    //     curve: Curves.linear);
 
-                  buttonCarouselController1.nextPage(
-                      duration: Duration(milliseconds: 300),
-                      curve: Curves.linear);
-                },
-                icon: Icon(
-                  Icons.arrow_right_outlined,
-                  color: Colors.white,
-                  size: 50,
+                    buttonCarouselController1.nextPage(
+                        duration: Duration(milliseconds: 300),
+                        curve: Curves.linear);
+                  },
+                  icon: Icon(
+                    Icons.arrow_right_outlined,
+                    color: Colors.white,
+                    size: 50,
+                  ),
                 ),
               ),
             ),
             //Left button
-            Align(
-              alignment: Alignment.centerLeft,
-              child: IconButton(
-                onPressed: () {
-                  // buttonCarouselController2.previousPage(
-                  //     duration: Duration(milliseconds: 300),
-                  //     curve: Curves.linear);
-                  buttonCarouselController1.previousPage(
-                      duration: Duration(milliseconds: 300),
-                      curve: Curves.linear);
-                },
-                icon: Icon(
-                  Icons.arrow_left_outlined,
-                  color: Colors.white,
-                  size: 50,
+            Padding(
+              padding: const EdgeInsets.only(bottom: 30.0),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: IconButton(
+                  onPressed: () {
+                    // buttonCarouselController2.previousPage(
+                    //     duration: Duration(milliseconds: 300),
+                    //     curve: Curves.linear);
+                    buttonCarouselController1.previousPage(
+                        duration: Duration(milliseconds: 300),
+                        curve: Curves.linear);
+                  },
+                  icon: Icon(
+                    Icons.arrow_left_outlined,
+                    color: Colors.white,
+                    size: 50,
+                  ),
+                ),
+              ),
+            ),
+
+            SafeArea(
+              child: Container(
+                height: categoryHeight/5,
+//color: Colors.amber[200].withOpacity(0),
+                child: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      variables.texts(
+                          "Portfolio project by", categoryWidth/18, FontWeight.normal),
+                      variables.texts("Nicola Cestaro", categoryWidth/18, FontWeight.bold)
+                    ],
+                  ),
                 ),
               ),
             ),
