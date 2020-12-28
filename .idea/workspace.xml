@@ -20,12 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b72c4192-da4f-4940-a47f-bd22cb0539b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app_portfolio/images/Oval.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_portfolio/images/Ovalbig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_portfolio/images/smallcircle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_portfolio/images/desktopTop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_portfolio/images/desktopleftlowercircle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_portfolio/images/desktopmiddlebigcircle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_portfolio/images/desktopmiddlesmallcircle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_portfolio/images/desktopmobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_portfolio/images/desktoptopleftsmallcircle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_portfolio/images/masterdesktop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_portfolio/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/app_portfolio/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_portfolio/lib/ui/mobile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/app_portfolio/lib/ui/mobile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_portfolio/lib/ui/web.dart" beforeDir="false" afterPath="$PROJECT_DIR$/app_portfolio/lib/ui/web.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_portfolio/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app_portfolio/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_portfolio/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app_portfolio/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609008411363</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Final mobile">
+      <created>1609079876007</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1609079876007</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,7 +200,8 @@
     <MESSAGE value="Mobile View. Responsive Left" />
     <MESSAGE value="Added scroll" />
     <MESSAGE value="Mobile Final without Mockup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mobile Final without Mockup" />
+    <MESSAGE value="Final mobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final mobile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1740" y="250" width="251" height="270" key="#Notifications" timestamp="1608803874878">
@@ -201,43 +217,43 @@
     </state>
     <state x="1466" y="100" width="749" height="568" key="AVDManager/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609078858523" />
     <state x="167" y="123" width="710" height="549" key="AVDManager/72.27.1294.741/1366.0.1366.768@72.27.1294.741" timestamp="1608820173571" />
-    <state x="1633" y="142" width="424" height="491" key="FileChooserDialogImpl" timestamp="1608974850903">
+    <state x="1633" y="142" width="424" height="491" key="FileChooserDialogImpl" timestamp="1609084431503">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1633" y="142" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608974850903" />
+    <state x="1633" y="142" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609084431503" />
     <state x="325" y="164" key="FileChooserDialogImpl/72.27.1294.741/1366.0.1366.768@72.27.1294.741" timestamp="1608820159370" />
-    <state width="894" height="173" key="GridCell.Tab.0.bottom" timestamp="1609079616796">
+    <state width="637" height="172" key="GridCell.Tab.0.bottom" timestamp="1609175673970">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="894" height="173" key="GridCell.Tab.0.bottom/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609079616796" />
-    <state width="1248" height="170" key="GridCell.Tab.0.bottom/72.27.1294.741/1366.0.1366.768@72.27.1294.741" timestamp="1608820540476" />
-    <state width="894" height="173" key="GridCell.Tab.0.center" timestamp="1609079616796">
+    <state width="637" height="172" key="GridCell.Tab.0.bottom/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609175673970" />
+    <state width="1248" height="164" key="GridCell.Tab.0.bottom/72.27.1294.741/1366.0.1366.768@72.27.1294.741" timestamp="1609168952023" />
+    <state width="637" height="172" key="GridCell.Tab.0.center" timestamp="1609175673970">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="894" height="173" key="GridCell.Tab.0.center/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609079616796" />
-    <state width="1248" height="170" key="GridCell.Tab.0.center/72.27.1294.741/1366.0.1366.768@72.27.1294.741" timestamp="1608820540476" />
-    <state width="894" height="173" key="GridCell.Tab.0.left" timestamp="1609079616796">
+    <state width="637" height="172" key="GridCell.Tab.0.center/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609175673970" />
+    <state width="1248" height="164" key="GridCell.Tab.0.center/72.27.1294.741/1366.0.1366.768@72.27.1294.741" timestamp="1609168952023" />
+    <state width="637" height="172" key="GridCell.Tab.0.left" timestamp="1609175673969">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="894" height="173" key="GridCell.Tab.0.left/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609079616796" />
-    <state width="1248" height="170" key="GridCell.Tab.0.left/72.27.1294.741/1366.0.1366.768@72.27.1294.741" timestamp="1608820540475" />
-    <state width="894" height="173" key="GridCell.Tab.0.right" timestamp="1609079616796">
+    <state width="637" height="172" key="GridCell.Tab.0.left/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609175673969" />
+    <state width="1248" height="164" key="GridCell.Tab.0.left/72.27.1294.741/1366.0.1366.768@72.27.1294.741" timestamp="1609168952023" />
+    <state width="637" height="172" key="GridCell.Tab.0.right" timestamp="1609175673970">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state width="894" height="173" key="GridCell.Tab.0.right/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609079616796" />
-    <state width="1248" height="170" key="GridCell.Tab.0.right/72.27.1294.741/1366.0.1366.768@72.27.1294.741" timestamp="1608820540476" />
+    <state width="637" height="172" key="GridCell.Tab.0.right/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609175673970" />
+    <state width="1248" height="164" key="GridCell.Tab.0.right/72.27.1294.741/1366.0.1366.768@72.27.1294.741" timestamp="1609168952023" />
     <state x="1366" y="19" width="1022" height="737" key="SettingsEditor" timestamp="1608803812941">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1366" y="19" width="1022" height="737" key="SettingsEditor/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1608803812941" />
-    <state x="1445" y="120" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1609008419767">
+    <state x="1445" y="120" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1609079884350">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1445" y="120" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609008419767" />
-    <state x="1444" y="100" width="784" height="563" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1609001151751">
+    <state x="1445" y="120" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609079884350" />
+    <state x="1444" y="100" width="784" height="563" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1609175993342">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
-    <state x="1444" y="100" width="784" height="563" key="com.intellij.history.integration.ui.views.FileHistoryDialog/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609001151751" />
+    <state x="1444" y="100" width="784" height="563" key="com.intellij.history.integration.ui.views.FileHistoryDialog/72.27.1294.741/1366.0.1366.768@1366.0.1366.768" timestamp="1609175993342" />
     <state x="1504" y="167" key="run.anything.popup" timestamp="1608886726259">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
@@ -252,7 +268,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/app_portfolio/lib/ui/mobile.dart</url>
-          <line>83</line>
+          <line>82</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

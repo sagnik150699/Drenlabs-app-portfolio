@@ -1,11 +1,10 @@
 import 'dart:ui';
 import 'package:app_portfolio/variables.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 // import 'package:google_fonts/google_fonts.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter_svg/svg.dart';
+
 
 class Mobile extends StatefulWidget {
   @override
@@ -15,7 +14,7 @@ class Mobile extends StatefulWidget {
 Variables variables = new Variables();
 
 class _MobileState extends State<Mobile> {
-  double topONe = 250;
+  double topONe = 200;
   double topTwo = 450;
   double three = -300;
 
@@ -43,9 +42,9 @@ class _MobileState extends State<Mobile> {
           if (v is ScrollUpdateNotification) {
             setState(
               () {
-                topONe = topONe - v.scrollDelta / 25;
+                topONe = topONe - v.scrollDelta / 35;
                 topTwo = topTwo - v.scrollDelta / 35;
-                three = three - v.scrollDelta / 25;
+                three = three - v.scrollDelta / 35;
               },
             );
           }
@@ -82,7 +81,7 @@ class _MobileState extends State<Mobile> {
             ),
             //Lower circle
             Positioned(
-              top: categoryHeight/2,
+              top: categoryHeight/1.5,
               left: three,
               child: Image(
                 image: AssetImage('images/Oval.png'),
@@ -210,7 +209,7 @@ class _MobileState extends State<Mobile> {
 
                   ],
                   options: CarouselOptions(
-                    onPageChanged: (index, CarouselPageChangedReason) {
+                    onPageChanged: (index, carouselPageChangedReason) {
                       print(index);
                       buttonCarouselController1.animateToPage(index,
                           duration: Duration(milliseconds: 300),
